@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'cf-docs'
+project = 'cf3-docs-german'
 copyright = '2022, CloudFerro'
 author = 'CloudFerro'
 
@@ -52,6 +52,22 @@ rst_prolog = """
 .. |brand-name-hyphen| replace:: CloudFerro
 """
 
+# -- General configuration ---------------------------------------------------
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+
+#extensions = ['sphinx_substitution_extensions']
+#rst_prolog = """
+#.. |brand-name| replace:: EO-Lab
+#.. |brand-name-hyphen| replace:: EO-Lab
+#"""
+language = 'de_DE'  
+locale_dirs = ['locale/'] 
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]
 
 # -- Options for HTML output -------------------------------------------------
 
